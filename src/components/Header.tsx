@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Menu, X, Search, ShoppingCart, User } from 'lucide-react';
 
@@ -5,14 +6,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    'Home',
-    'Products',
-    'Sweets',
-    'Snacks',
-    'Ready to Eat',
-    'Beverages',
-    'About Us',
-    'Contact'
+    'Indian Pickles',
+    'Indian Snacks',
+    'Sweets'
   ];
 
   return (
