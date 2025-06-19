@@ -35,7 +35,7 @@ const AboutSection = () => {
               Our Legacy of Taste & Tradition
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Since 1937, Haldiram's has been synonymous with authentic Indian taste and uncompromising quality. 
+              Since 1937, joushnafoods.in has been synonymous with authentic Indian taste and uncompromising quality. 
               What started as a small shop in Bikaner has grown into one of India's most trusted food brands, 
               serving millions of customers worldwide.
             </p>

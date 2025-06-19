@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Menu, X, Search, ShoppingCart, User } from 'lucide-react';
 
@@ -22,7 +21,7 @@ const Header = () => {
         {/* Top bar */}
         <div className="flex items-center justify-between py-2 border-b">
           <div className="text-sm text-gray-600">
-            Call us: +91-11-4715-4715 | Email: info@haldiram.com
+            Call us: +91-11-4715-4715 | Email: info@joushnafoods.in
           </div>
           <div className="flex items-center space-x-4">
             <Search className="w-5 h-5 text-gray-600 cursor-pointer hover:text-orange-500 transition-colors" />
@@ -37,7 +36,7 @@ const Header = () => {
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <h1 className="text-3xl font-bold text-orange-600">Haldiram's</h1>
+            <h1 className="text-3xl font-bold text-orange-600">joushnafoods.in</h1>
           </div>
 
           {/* Desktop menu */}

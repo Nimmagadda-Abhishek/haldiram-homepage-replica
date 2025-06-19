@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
 
@@ -62,7 +61,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Company info */}
             <div>
-              <h3 className="text-2xl font-bold text-orange-500 mb-6">Haldiram's</h3>
+              <h3 className="text-2xl font-bold text-orange-500 mb-6">joushnafoods.in</h3>
               <p className="text-gray-300 mb-6">
                 Since 1937, we have been serving authentic Indian taste with uncompromising quality. 
                 From traditional sweets to modern snacks, we bring you the best of Indian cuisine.
@@ -123,11 +122,11 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center text-gray-300">
                   <Mail className="w-5 h-5 mr-3 text-orange-500" />
-                  info@haldiram.com
+                  info@joushnafoods.in
                 </div>
                 <div className="flex items-start text-gray-300">
                   <MapPin className="w-5 h-5 mr-3 text-orange-500 mt-1" />
-                  Haldiram Bhujiwala Limited, Bikaner, Rajasthan, India
+                  joushnafoods.in Limited, Bikaner, Rajasthan, India
                 </div>
               </div>
             </div>
@@ -140,7 +139,7 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm">
-              © 2025 Haldiram's. All rights reserved.
+              © 2025 joushnafoods.in. All rights reserved.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-orange-500 text-sm transition-colors">
