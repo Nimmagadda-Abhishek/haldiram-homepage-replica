@@ -2,10 +2,10 @@
 import React from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Services from '../components/Services';
-import Projects from '../components/Projects';
+import ProductCategories from '../components/ProductCategories';
+import FeaturedProducts from '../components/FeaturedProducts';
 import AboutSection from '../components/AboutSection';
-import ContactSection from '../components/ContactSection';
+import NewsSection from '../components/NewsSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -13,10 +13,10 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <Services />
-      <Projects />
+      <ProductCategories />
+      <FeaturedProducts />
       <AboutSection />
-      <ContactSection />
+      <NewsSection />
       <Footer />
     </div>
   );

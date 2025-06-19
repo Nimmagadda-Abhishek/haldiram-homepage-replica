@@ -1,44 +1,38 @@
 
 import React, { useState } from 'react';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Search, ShoppingCart, User } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    'Home',
-    'About',
-    'Services',
-    'Projects',
-    'Contact'
+    'Indian Pickles',
+    'Indian Snacks',
+    'Sweets'
   ];
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="container mx-auto px-4">
         {/* Top bar */}
-        <div className="flex items-center justify-between py-2 border-b border-gray-200">
-          <div className="flex items-center space-x-6 text-sm text-gray-600">
-            <div className="flex items-center">
-              <Phone className="w-4 h-4 mr-2 text-blue-600" />
-              +91-98765-43210
-            </div>
-            <div className="flex items-center">
-              <Mail className="w-4 h-4 mr-2 text-blue-600" />
-              info@udaymegastructuresllp.com
-            </div>
-          </div>
+        <div className="flex items-center justify-between py-2 border-b">
           <div className="text-sm text-gray-600">
-            Building Excellence Since 2010
+            Call us: +91-11-4715-4715 | Email: info@joushnafoods.in
+          </div>
+          <div className="flex items-center space-x-4">
+            <Search className="w-5 h-5 text-gray-600 cursor-pointer hover:text-orange-500 transition-colors" />
+            <User className="w-5 h-5 text-gray-600 cursor-pointer hover:text-orange-500 transition-colors" />
+            <div className="relative">
+              <ShoppingCart className="w-5 h-5 text-gray-600 cursor-pointer hover:text-orange-500 transition-colors" />
+              <span className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">0</span>
+            </div>
           </div>
         </div>
 
         {/* Main navigation */}
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-blue-900">
-              Uday<span className="text-blue-600">MegaStructures</span>LLP
-            </h1>
+            <h1 className="text-3xl font-bold text-orange-600">joushnafoods.in</h1>
           </div>
 
           {/* Desktop menu */}
@@ -46,16 +40,13 @@ const Header = () => {
             {menuItems.map((item) => (
               <a
                 key={item}
-                href="/"
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+                href="#"
+                className="text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200 relative group"
               >
                 {item}
-                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
+                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-orange-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200"></span>
               </a>
             ))}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors">
-              Get Quote
-            </button>
           </nav>
 
           {/* Mobile menu button */}
@@ -74,15 +65,12 @@ const Header = () => {
               {menuItems.map((item) => (
                 <a
                   key={item}
-                  href="/"
-                  className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
+                  href="#"
+                  className="text-gray-700 hover:text-orange-500 font-medium transition-colors duration-200"
                 >
                   {item}
                 </a>
               ))}
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-medium transition-colors w-fit">
-                Get Quote
-              </button>
             </nav>
           </div>
         )}
