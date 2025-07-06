@@ -2,93 +2,86 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* Two-tone design system: White and Midnight Blue (rgb(25, 25, 112)) with proper hierarchy */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 255 255 255;
+    --foreground: 25 25 112;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 255 255 255;
+    --card-foreground: 25 25 112;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 255 255 255;
+    --popover-foreground: 25 25 112;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 25 25 112;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 248 250 252;
+    --secondary-foreground: 25 25 112;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 248 250 252;
+    --muted-foreground: 25 25 112;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 25 25 112;
+    --accent-foreground: 255 255 255;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 25 25 112;
+    --destructive-foreground: 255 255 255;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 25 25 112;
+    --input: 25 25 112;
+    --ring: 25 25 112;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 25 25 112;
+    --sidebar-foreground: 255 255 255;
+    --sidebar-primary: 255 255 255;
+    --sidebar-primary-foreground: 25 25 112;
+    --sidebar-accent: 25 25 112;
+    --sidebar-accent-foreground: 255 255 255;
+    --sidebar-border: 25 25 112;
+    --sidebar-ring: 25 25 112;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 25 25 112;
+    --foreground: 255 255 255;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 25 25 112;
+    --card-foreground: 255 255 255;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 25 25 112;
+    --popover-foreground: 255 255 255;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 25 25 112;
+    --primary-foreground: 255 255 255;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 25 25 112;
+    --secondary-foreground: 255 255 255;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 25 25 112;
+    --muted-foreground: 255 255 255;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 25 25 112;
+    --accent-foreground: 255 255 255;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 25 25 112;
+    --destructive-foreground: 255 255 255;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 25 25 112;
+    --input: 25 25 112;
+    --ring: 25 25 112;
+    --sidebar-background: 25 25 112;
+    --sidebar-foreground: 255 255 255;
+    --sidebar-primary: 25 25 112;
+    --sidebar-primary-foreground: 255 255 255;
+    --sidebar-accent: 25 25 112;
+    --sidebar-accent-foreground: 255 255 255;
+    --sidebar-border: 25 25 112;
+    --sidebar-ring: 25 25 112;
   }
 }
 
@@ -101,3 +94,124 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* Custom utility classes for two-tone design with Midnight Blue (rgb(25, 25, 112)) and White */
+  .text-primary-dark {
+    color: rgb(25, 25, 112);
+  }
+  
+  .text-primary-medium {
+    color: rgba(25, 25, 112, 0.8);
+  }
+  
+  .text-primary-light {
+    color: rgba(25, 25, 112, 0.6);
+  }
+  
+  .bg-primary-light {
+    background-color: rgba(25, 25, 112, 0.1);
+  }
+  
+  .bg-primary-medium {
+    background-color: rgba(25, 25, 112, 0.2);
+  }
+  
+  .bg-primary-dark {
+    background-color: rgb(25, 25, 112);
+  }
+  
+  .border-primary-light {
+    border-color: rgba(25, 25, 112, 0.3);
+  }
+  
+  .border-primary-medium {
+    border-color: rgba(25, 25, 112, 0.5);
+  }
+  
+  .border-primary-dark {
+    border-color: rgb(25, 25, 112);
+  }
+  
+  .hover-bg-primary-light:hover {
+    background-color: rgba(25, 25, 112, 0.1);
+  }
+  
+  .hover-bg-primary-medium:hover {
+    background-color: rgba(25, 25, 112, 0.2);
+  }
+  
+  .hover-bg-primary-dark:hover {
+    background-color: rgb(25, 25, 112);
+  }
+  
+  .shadow-primary {
+    box-shadow: 0 4px 6px -1px rgba(25, 25, 112, 0.1), 0 2px 4px -1px rgba(25, 25, 112, 0.06);
+  }
+  
+  .shadow-primary-lg {
+    box-shadow: 0 10px 15px -3px rgba(25, 25, 112, 0.1), 0 4px 6px -2px rgba(25, 25, 112, 0.05);
+  }
+  
+  /* Midnight Blue Gradients */
+  .bg-gradient-midnight {
+    background: linear-gradient(135deg, rgb(25, 25, 112) 0%, rgb(47, 47, 147) 50%, rgb(25, 25, 112) 100%);
+  }
+  
+  .bg-gradient-midnight-light {
+    background: linear-gradient(135deg, rgba(25, 25, 112, 0.1) 0%, rgba(47, 47, 147, 0.1) 50%, rgba(25, 25, 112, 0.1) 100%);
+  }
+  
+  .bg-gradient-midnight-subtle {
+    background: linear-gradient(135deg, rgba(25, 25, 112, 0.05) 0%, rgba(47, 47, 147, 0.05) 50%, rgba(25, 25, 112, 0.05) 100%);
+  }
+  
+  .bg-gradient-midnight-medium {
+    background: linear-gradient(135deg, rgba(25, 25, 112, 0.3) 0%, rgba(47, 47, 147, 0.3) 50%, rgba(25, 25, 112, 0.3) 100%);
+  }
+  
+  .text-gradient-midnight {
+    background: linear-gradient(135deg, rgb(25, 25, 112) 0%, rgb(47, 47, 147) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Card styling with midnight blue accents */
+  .card-midnight {
+    background: #f4f6fa; /* Use a very light faded midnight blue instead of white */
+    border: 1px solid rgba(25, 25, 112, 0.2);
+    box-shadow: 0 4px 6px -1px rgba(25, 25, 112, 0.1);
+  }
+  
+  .card-midnight:hover {
+    border-color: rgba(25, 25, 112, 0.4);
+    box-shadow: 0 8px 15px -3px rgba(25, 25, 112, 0.15);
+  }
+  
+  /* Button styles with midnight blue */
+  .btn-primary-midnight {
+    background-color: rgb(25, 25, 112);
+    color: #f4f6fa; /* Use faded midnight blue for text instead of white */
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary-midnight:hover {
+    background-color: rgba(25, 25, 112, 0.9);
+    box-shadow: 0 4px 8px rgba(25, 25, 112, 0.2);
+  }
+  
+  .btn-outline-midnight {
+    background-color: transparent;
+    border: 2px solid rgb(25, 25, 112);
+    color: rgb(25, 25, 112);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-midnight:hover {
+    background-color: rgb(25, 25, 112);
+    color: #f4f6fa; /* Use faded midnight blue for text instead of white */
+  }
+}
+
+/* Remove all other color-based keyframes and utilities */
